@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mian Organic Farm — Premium Desi Products & Livestock</title>
+  <meta name="description" content="Mian Organic Farm delivers fresh desi mutton, beef, chicken, eggs & ghee in Khanpur and nearby areas. Advance booking, vaccination history & instalments available." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">
+          <div class="nav-logo-icon">🌿</div>
+          <div class="nav-logo-text">
+            <span>Mian Organic Farm</span>
+            <span>Pure & Natural</span>
+          </div>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#booking">Booking</a></li>
+          <li><a href="#vaccination">Vaccination</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button class="nav-cart-btn" id="navCartBtn" aria-label="Open Cart">
+              🛒 <span class="cart-count" id="cartCount">0</span>
+            </button>
+          </li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">🌾 100% Organic & Desi</div>
+        <h1 class="hero-title">Mian Organic Farm<span>Fresh. Pure. Delivered.</span></h1>
+        <p class="hero-subtitle">Premium desi mutton, beef, chicken, eggs & ghee — straight from our farm to your doorstep in Khanpur & surrounding areas.</p>
+        <div class="hero-btns">
+          <a href="#shop" class="btn btn-primary">🛒 Shop Now</a>
+          <a href="#contact" class="btn btn-outline">📞 Contact Us</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><div class="hero-stat-num">500+</div><div class="hero-stat-label">Happy Customers</div></div>
+          <div class="hero-stat"><div class="hero-stat-num">15+</div><div class="hero-stat-label">Years Experience</div></div>
+          <div class="hero-stat"><div class="hero-stat-num">100%</div><div class="hero-stat-label">Organic Feed</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">Scroll</div>
+  </section>
+
+  <!-- DELIVERY ZONE BANNER -->
+  <section id="delivery-zone" class="section delivery-zone-section">
+    <div class="container">
+      <div class="delivery-zone-card">
+        <div class="delivery-zone-header">
+          <span class="delivery-zone-icon">📍</span>
+          <div>
+            <h2>Delivery Area Check</h2>
+            <p>We deliver in Khanpur & nearby areas only</p>
+          </div>
+        </div>
+        <div class="delivery-zone-body">
+          <div class="delivery-tags" id="deliveryTags">
+            <span class="delivery-tag active">Khanpur</span>
+            <span class="delivery-tag">Rahim Yar Khan</span>
+            <span class="delivery-tag">Liaquatpur</span>
+            <span class="delivery-tag">Sadiqabad</span>
+            <span class="delivery-tag">Khanpur City</span>
+            <span class="delivery-tag">Chachran Sharif</span>
+            <span class="delivery-tag">Kot Samaba</span>
+            <span class="delivery-tag">Jamal Din Wali</span>
+            <span class="delivery-tag">Trinda Muhammad Panah</span>
+            <span class="delivery-tag">Khan Bela</span>
+            <span class="delivery-tag">Zahir Pir</span>
+            <span class="delivery-tag">Naushahra</span>
+            <span class="delivery-tag">Bhong</span>
+            <span class="delivery-tag">Ahmed Pur Lamma</span>
+            <span class="delivery-tag">Feroza</span>
+            <span class="delivery-tag">Therhi</span>
+            <span class="delivery-tag">Nawankot</span>
+            <span class="delivery-tag">Muhammad Pur</span>
+            <span class="delivery-tag">Daharki (Sindh border)</span>
+            <span class="delivery-tag">Ubaro</span>
+          </div>
+          <div class="delivery-custom">
+            <p>Don't see your area? Tell us your address:</p>
+            <div class="delivery-custom-input">
+              <input type="text" id="customAddress" placeholder="Enter your full address or area name..." />
+              <button class="btn btn-primary" id="checkAddressBtn">📍 Check Availability</button>
+            </div>
+            <div class="delivery-result" id="deliveryResult"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOP -->
+  <section id="shop" class="section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Our Products</span>
+        <h2 class="section-title">Farm Fresh Shop</h2>
+        <p class="section-sub">100% organic, desi products delivered fresh. No hormones, no shortcuts.</p>
+      </div>
+      <div class="filter-tabs" id="shopFilters">
+        <button class="filter-tab active" data-filter="all">🛒 All</button>
+        <button class="filter-tab" data-filter="meat">🥩 Meat</button>
+        <button class="filter-tab" data-filter="chicken">🐔 Chicken</button>
+        <button class="filter-tab" data-filter="eggs">🥚 Eggs</button>
+        <button class="filter-tab" data-filter="ghee">🧈 Ghee</button>
+      </div>
+      <div class="shop-grid" id="shopGrid">
+        <!-- Products injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ADVANCE BOOKING -->
+  <section id="booking" class="section booking-section">
+    <div class="container">
+      <div class="booking-grid">
+        <div class="booking-info">
+          <span class="section-label">Advance Booking</span>
+          <h2 class="section-title" style="color:#fff;">Book Your Order in Advance</h2>
+          <p class="section-sub" style="color:rgba(255,255,255,0.8);">Reserve your desi products or livestock ahead of time. Pay a small advance and get guaranteed delivery on your chosen date.</p>
+          <div class="booking-features">
+            <div class="booking-feat"><span>📅</span><div><strong>Choose Your Date</strong><span>Pick a delivery date up to 30 days ahead</span></div></div>
+            <div class="booking-feat"><span>💰</span><div><strong>Small Advance</strong><span>Just 20% advance to confirm booking</span></div></div>
+            <div class="booking-feat"><span>✅</span><div><strong>Guaranteed Fresh</strong><span>Products prepared on your delivery day</span></div></div>
+          </div>
+        </div>
+        <div class="booking-form-wrap">
+          <div class="booking-form-card">
+            <h3>📋 Book Now</h3>
+            <form id="bookingForm">
+              <div class="form-group"><label>Your Name *</label><input type="text" id="bookName" required placeholder="Your full name" /></div>
+              <div class="form-group"><label>Phone *</label><input type="tel" id="bookPhone" required placeholder="0305-2619414" /></div>
+              <div class="form-group"><label>Product / Animal</label>
+                <select id="bookProduct">
+                  <option value="">— Select —</option>
+                  <option>Desi Mutton</option><option>Beef</option><option>Beef Qeema</option>
+                  <option>Desi Chicken (Whole)</option><option>Desi Eggs (1 Dozen)</option>
+                  <option>Pure Desi Ghee (1 kg)</option><option>Livestock / Animal</option>
+                </select>
+              </div>
+              <div class="form-group"><label>Delivery Date</label><input type="date" id="bookDate" /></div>
+              <div class="form-group"><label>Special Instructions</label><textarea id="bookNotes" placeholder="Any special request..."></textarea></div>
+              <button type="submit" class="form-submit">📅 Confirm Booking</button>
+            </form>
+            <div class="form-success" id="bookingSuccess">✅ Booking confirmed! We'll contact you within 24 hours.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VACCINATION HISTORY -->
+  <section id="vaccination" class="section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Health Records</span>
+        <h2 class="section-title">Vaccination History</h2>
+        <p class="section-sub">Track your animal's complete vaccination record. Enter the animal tag/ID to view history.</p>
+      </div>
+      <div class="vacc-search-wrap">
+        <div class="vacc-search">
+          <input type="text" id="vaccSearchInput" placeholder="Enter Animal Tag ID (e.g., MOF-001)" />
+          <button class="btn btn-primary" id="vaccSearchBtn">🔍 Search</button>
+        </div>
+      </div>
+      <div class="vacc-results" id="vaccResults"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section" style="background:var(--white);">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <img src="images/about.png" alt="Mian Organic Farm" class="about-img-main" />
+          <div class="about-img-badge"><span>15+</span><span>Years of Trust</span></div>
+        </div>
+        <div class="about-content">
+          <span class="section-label">Our Story</span>
+          <h2 class="section-title">A Heritage of<br/>Organic Excellence</h2>
+          <p class="section-sub" style="margin-bottom:20px;">Mian Organic Farm has been serving the Khanpur community for over 15 years with the purest desi products. Every animal is raised on natural feed, every product is 100% organic.</p>
+          <div class="about-features">
+            <div class="about-feature"><div class="about-feature-icon">🌾</div><div class="about-feature-text"><strong>Natural Feed Only</strong><span>No hormones or additives</span></div></div>
+            <div class="about-feature"><div class="about-feature-icon">💉</div><div class="about-feature-text"><strong>Vaccinated & Certified</strong><span>Full health records</span></div></div>
+            <div class="about-feature"><div class="about-feature-icon">🚚</div><div class="about-feature-text"><strong>Home Delivery</strong><span>Khanpur & nearby areas</span></div></div>
+            <div class="about-feature"><div class="about-feature-icon">🤝</div><div class="about-feature-text"><strong>Family-Owned</strong><span>Personal service & trust</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title">Contact Us</h2>
+          <p class="section-sub">Questions about our products, delivery, or livestock? We're here to help.</p>
+          <div class="contact-info-items">
+            <div class="contact-info-item"><div class="contact-info-icon">📍</div><div class="contact-info-text"><strong>Farm Location</strong><span>Mian Organic Farm, Khanpur, Punjab</span></div></div>
+            <div class="contact-info-item"><div class="contact-info-icon">📞</div><div class="contact-info-text"><strong>Call Us</strong><span>0305-2619414</span></div></div>
+            <div class="contact-info-item"><div class="contact-info-icon">⏰</div><div class="contact-info-text"><strong>Hours</strong><span>Daily: 7:00 AM – 8:00 PM</span></div></div>
+          </div>
+          <a href="https://wa.me/923052619414?text=Hello%21%20I%20want%20to%20order%20from%20Mian%20Organic%20Farm." class="whatsapp-cta" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+        </div>
+        <div class="contact-form-wrap">
+          <div class="contact-form">
+            <h3>Send an Inquiry</h3>
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group"><label for="contactName">Your Name *</label><input type="text" id="contactName" required placeholder="Muhammad Ali" /></div>
+                <div class="form-group"><label for="contactPhone">Phone *</label><input type="tel" id="contactPhone" required placeholder="0305-2619414" /></div>
+              </div>
+              <div class="form-group"><label for="contactMessage">Message</label><textarea id="contactMessage" placeholder="How can we help?"></textarea></div>
+              <button type="submit" class="form-submit">📨 Send Inquiry</button>
+            </form>
+            <div class="form-success" id="formSuccess">✅ Thank you! We'll contact you within 24 hours.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><div class="footer-logo-icon">🌿</div><div class="footer-logo-name">Mian Organic Farm</div></div>
+          <p class="footer-desc">Premium desi products & livestock raised with care for over 15 years. Serving Khanpur & nearby areas.</p>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="#shop">Shop</a></li><li><a href="#booking">Booking</a></li><li><a href="#vaccination">Vaccination</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Products</h4><ul><li><a href="#shop">Desi Mutton</a></li><li><a href="#shop">Fresh Beef</a></li><li><a href="#shop">Desi Chicken</a></li><li><a href="#shop">Desi Eggs</a></li><li><a href="#shop">Pure Ghee</a></li></ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:+923052619414">📞 0305-2619414</a></li><li><a href="https://wa.me/923052619414" target="_blank">💬 WhatsApp</a></li><li><a href="#contact">📍 Khanpur, Punjab</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Mian Organic Farm. All Rights Reserved.</span></div>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3>🛒 Your Cart</h3>
+      <button class="cart-close" id="cartClose">✕</button>
+    </div>
+    <div class="cart-drawer-body" id="cartDrawerBody">
+      <div class="cart-empty" id="cartEmpty"><span>🛒</span><p>Your cart is empty</p></div>
+    </div>
+    <div class="cart-drawer-footer" id="cartDrawerFooter">
+      <div class="cart-total"><span>Total:</span><span id="cartTotal">PKR 0</span></div>
+      <div class="cart-payment-toggle">
+        <label class="toggle-label"><input type="radio" name="payType" value="full" checked /> Full Payment</label>
+        <label class="toggle-label"><input type="radio" name="payType" value="instalment" /> Instalment Plan</label>
+      </div>
+      <div class="instalment-info" id="instalmentInfo" style="display:none;">
+        <select id="instalmentPlan">
+          <option value="3">3 Months (25% advance)</option>
+          <option value="6">6 Months (20% advance)</option>
+        </select>
+        <div class="instalment-breakdown" id="instalmentBreakdown"></div>
+      </div>
+      <button class="btn btn-primary cart-checkout-btn" id="checkoutBtn">📦 Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <!-- CHECKOUT MODAL -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal-card">
+      <button class="modal-close" id="checkoutClose">✕</button>
+      <h3>📦 Checkout</h3>
+      <form id="checkoutForm">
+        <div class="form-group"><label>Full Name *</label><input type="text" id="coName" required /></div>
+        <div class="form-group"><label>Phone *</label><input type="tel" id="coPhone" required /></div>
+        <div class="form-group"><label>Delivery Area *</label>
+          <select id="coArea">
+            <option value="">— Select Area —</option>
+            <option>Khanpur</option><option>Rahim Yar Khan</option><option>Liaquatpur</option>
+            <option>Sadiqabad</option><option>Chachran Sharif</option><option>Kot Samaba</option>
+            <option>Jamal Din Wali</option><option>Trinda Muhammad Panah</option><option>Khan Bela</option>
+            <option>Zahir Pir</option><option>Naushahra</option><option>Bhong</option>
+            <option>Ahmed Pur Lamma</option><option>Feroza</option><option>Therhi</option>
+            <option>Nawankot</option><option>Muhammad Pur</option><option>Daharki</option><option>Ubaro</option>
+            <option value="custom">📍 Other — Enter Address</option>
+          </select>
+        </div>
+        <div class="form-group" id="coCustomAddrGroup" style="display:none;">
+          <label>Your Full Address *</label>
+          <textarea id="coCustomAddr" placeholder="Enter your complete address..."></textarea>
+        </div>
+        <div class="form-group"><label>Notes</label><textarea id="coNotes" placeholder="Any special instructions..."></textarea></div>
+        <div class="checkout-summary" id="checkoutSummary"></div>
+        <button type="submit" class="form-submit">✅ Place Order via WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/923052619414" class="whatsapp-float-btn" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
