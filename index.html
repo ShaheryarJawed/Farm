@@ -3,33 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mian Organic Farm — Premium Desi Products & Livestock</title>
-  <meta name="description" content="Mian Organic Farm delivers fresh desi mutton, beef, chicken, eggs & ghee in Khanpur and nearby areas. Advance booking, vaccination history & instalments available." />
+  <title>Mian Organic Farm — Fresh. Pure. Delivered.</title>
+  <meta name="description" content="Mian Organic Farm delivers premium desi mutton, beef, chicken, eggs & ghee in Khanpur and surrounding areas. 15+ years of trust. 100% organic feed. Advance booking available." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- ══════════════════════════════════════════════
+       NAVBAR
+       ══════════════════════════════════════════════ -->
   <nav id="navbar">
     <div class="container">
       <div class="nav-inner">
-        <a href="#hero" class="nav-logo">
+        <a href="#hero" class="nav-logo" id="navLogo">
           <div class="nav-logo-icon">🌿</div>
           <div class="nav-logo-text">
             <span>Mian Organic Farm</span>
-            <span>Pure & Natural</span>
+            <span>Est. 2010 — Khanpur</span>
           </div>
         </a>
         <ul class="nav-links" id="navLinks">
-          <li><a href="#shop">Shop</a></li>
-          <li><a href="#booking">Booking</a></li>
-          <li><a href="#vaccination">Vaccination</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#shop">Shop<span class="urdu-sub">خریداری</span></a></li>
+          <li><a href="#booking">Booking<span class="urdu-sub">بکنگ</span></a></li>
+          <li><a href="#vaccination">Records<span class="urdu-sub">ریکارڈز</span></a></li>
+          <li><a href="#about">About<span class="urdu-sub">ہمارے بارے</span></a></li>
+          <li><a href="#contact">Contact<span class="urdu-sub">رابطہ</span></a></li>
           <li>
             <button class="nav-cart-btn" id="navCartBtn" aria-label="Open Cart">
-              🛒 <span class="cart-count" id="cartCount">0</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              <span class="cart-count" id="cartCount">0</span>
             </button>
           </li>
         </ul>
@@ -40,232 +46,404 @@
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- ══════════════════════════════════════════════
+       HERO
+       ══════════════════════════════════════════════ -->
   <section id="hero">
     <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
     <div class="container">
       <div class="hero-content">
-        <div class="hero-badge">🌾 100% Organic & Desi</div>
-        <h1 class="hero-title">Mian Organic Farm<span>Fresh. Pure. Delivered.</span></h1>
-        <p class="hero-subtitle">Premium desi mutton, beef, chicken, eggs & ghee — straight from our farm to your doorstep in Khanpur & surrounding areas.</p>
-        <div class="hero-btns">
-          <a href="#shop" class="btn btn-primary">🛒 Shop Now</a>
-          <a href="#contact" class="btn btn-outline">📞 Contact Us</a>
+        <div class="hero-badge">Mian Organic Farm</div>
+        <h1 class="hero-title">Fresh. Pure.<br><em>Delivered.</em></h1>
+        <p class="hero-subtitle">Premium desi mutton, beef, chicken, eggs & ghee — raised on natural feed, delivered fresh to your doorstep.</p>
+        <div class="hero-cta-row">
+          <a href="#shop" class="btn btn-primary">Shop Now<span class="urdu-sub" style="color:rgba(255,255,255,.6);">ابھی خریدیں</span></a>
+          <a href="#booking" class="btn btn-outline">Book in Advance<span class="urdu-sub" style="color:rgba(255,255,255,.5);">ایڈوانس بکنگ</span></a>
         </div>
-        <div class="hero-stats">
-          <div class="hero-stat"><div class="hero-stat-num">500+</div><div class="hero-stat-label">Happy Customers</div></div>
-          <div class="hero-stat"><div class="hero-stat-num">15+</div><div class="hero-stat-label">Years Experience</div></div>
-          <div class="hero-stat"><div class="hero-stat-num">100%</div><div class="hero-stat-label">Organic Feed</div></div>
+        <div class="hero-glass-bar">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Delivering in Khanpur & Surrounding Areas
         </div>
       </div>
     </div>
-    <div class="hero-scroll">Scroll</div>
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      Scroll
+    </div>
   </section>
 
-  <!-- DELIVERY ZONE BANNER -->
-  <section id="delivery-zone" class="section delivery-zone-section">
+  <!-- ══════════════════════════════════════════════
+       TRUST BAR
+       ══════════════════════════════════════════════ -->
+  <section id="trust-bar">
     <div class="container">
-      <div class="delivery-zone-card">
-        <div class="delivery-zone-header">
-          <span class="delivery-zone-icon">📍</span>
-          <div>
-            <h2>Delivery Area Check</h2>
-            <p>We deliver in Khanpur & nearby areas only</p>
+      <div class="trust-bar-inner">
+        <div class="trust-item reveal">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="trust-text">
+            <strong>15+ Years</strong>
+            <span>Trusted Heritage</span>
           </div>
         </div>
-        <div class="delivery-zone-body">
-          <div class="delivery-tags" id="deliveryTags">
-            <span class="delivery-tag active">Khanpur</span>
-            <span class="delivery-tag">Rahim Yar Khan</span>
-            <span class="delivery-tag">Liaquatpur</span>
-            <span class="delivery-tag">Sadiqabad</span>
-            <span class="delivery-tag">Khanpur City</span>
-            <span class="delivery-tag">Chachran Sharif</span>
-            <span class="delivery-tag">Kot Samaba</span>
-            <span class="delivery-tag">Jamal Din Wali</span>
-            <span class="delivery-tag">Trinda Muhammad Panah</span>
-            <span class="delivery-tag">Khan Bela</span>
-            <span class="delivery-tag">Zahir Pir</span>
-            <span class="delivery-tag">Naushahra</span>
-            <span class="delivery-tag">Bhong</span>
-            <span class="delivery-tag">Ahmed Pur Lamma</span>
-            <span class="delivery-tag">Feroza</span>
-            <span class="delivery-tag">Therhi</span>
-            <span class="delivery-tag">Nawankot</span>
-            <span class="delivery-tag">Muhammad Pur</span>
-            <span class="delivery-tag">Daharki (Sindh border)</span>
-            <span class="delivery-tag">Ubaro</span>
+        <div class="trust-item reveal reveal-delay-1">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
           </div>
-          <div class="delivery-custom">
-            <p>Don't see your area? Tell us your address:</p>
-            <div class="delivery-custom-input">
-              <input type="text" id="customAddress" placeholder="Enter your full address or area name..." />
-              <button class="btn btn-primary" id="checkAddressBtn">📍 Check Availability</button>
-            </div>
-            <div class="delivery-result" id="deliveryResult"></div>
+          <div class="trust-text">
+            <strong>100% Organic</strong>
+            <span>Natural Feed Only</span>
+          </div>
+        </div>
+        <div class="trust-item reveal reveal-delay-2">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <div class="trust-text">
+            <strong>Vaccinated</strong>
+            <span>Certified & Tracked</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SHOP -->
+  <!-- ══════════════════════════════════════════════
+       SHOP — BENTO GRID
+       ══════════════════════════════════════════════ -->
   <section id="shop" class="section">
     <div class="container">
-      <div class="text-center">
-        <span class="section-label">Our Products</span>
-        <h2 class="section-title">Farm Fresh Shop</h2>
-        <p class="section-sub">100% organic, desi products delivered fresh. No hormones, no shortcuts.</p>
+      <div class="text-center reveal">
+        <div class="section-label">Our Products</div>
+        <h2 class="section-title">Farm Fresh, Delivered Daily</h2>
+        <p class="section-desc">100% organic, desi products from our farm to your table. No hormones, no shortcuts — just pure quality.</p>
       </div>
-      <div class="filter-tabs" id="shopFilters">
-        <button class="filter-tab active" data-filter="all">🛒 All</button>
-        <button class="filter-tab" data-filter="meat">🥩 Meat</button>
-        <button class="filter-tab" data-filter="chicken">🐔 Chicken</button>
-        <button class="filter-tab" data-filter="eggs">🥚 Eggs</button>
-        <button class="filter-tab" data-filter="ghee">🧈 Ghee</button>
+      <div class="filter-bar reveal" id="shopFilters">
+        <button class="filter-btn active" data-filter="all">All Products</button>
+        <button class="filter-btn" data-filter="meat">Meat</button>
+        <button class="filter-btn" data-filter="chicken">Chicken</button>
+        <button class="filter-btn" data-filter="eggs">Eggs</button>
+        <button class="filter-btn" data-filter="ghee">Ghee</button>
       </div>
-      <div class="shop-grid" id="shopGrid">
+      <div class="bento-grid" id="shopGrid">
         <!-- Products injected by JS -->
       </div>
     </div>
   </section>
 
-  <!-- ADVANCE BOOKING -->
+  <!-- ══════════════════════════════════════════════
+       ADVANCE BOOKING — SAAS CARD + STEPPER
+       ══════════════════════════════════════════════ -->
   <section id="booking" class="section booking-section">
     <div class="container">
-      <div class="booking-grid">
-        <div class="booking-info">
-          <span class="section-label">Advance Booking</span>
-          <h2 class="section-title" style="color:#fff;">Book Your Order in Advance</h2>
-          <p class="section-sub" style="color:rgba(255,255,255,0.8);">Reserve your desi products or livestock ahead of time. Pay a small advance and get guaranteed delivery on your chosen date.</p>
+      <div class="booking-layout">
+        <div class="booking-info reveal">
+          <div class="section-label">Advance Booking</div>
+          <h2 class="section-title">Reserve Your<br>Order Ahead</h2>
+          <p class="section-desc">Pay a small 20% advance and get guaranteed freshness on your chosen delivery date. It's that simple.</p>
           <div class="booking-features">
-            <div class="booking-feat"><span>📅</span><div><strong>Choose Your Date</strong><span>Pick a delivery date up to 30 days ahead</span></div></div>
-            <div class="booking-feat"><span>💰</span><div><strong>Small Advance</strong><span>Just 20% advance to confirm booking</span></div></div>
-            <div class="booking-feat"><span>✅</span><div><strong>Guaranteed Fresh</strong><span>Products prepared on your delivery day</span></div></div>
+            <div class="booking-feat">
+              <div class="booking-feat-icon">📅</div>
+              <div class="booking-feat-text">
+                <strong>Choose Your Date</strong>
+                <span>Pick a delivery date up to 30 days ahead</span>
+              </div>
+            </div>
+            <div class="booking-feat">
+              <div class="booking-feat-icon">💰</div>
+              <div class="booking-feat-text">
+                <strong>20% Advance Only</strong>
+                <span>Small deposit to confirm your booking</span>
+              </div>
+            </div>
+            <div class="booking-feat">
+              <div class="booking-feat-icon">✅</div>
+              <div class="booking-feat-text">
+                <strong>Guaranteed Fresh</strong>
+                <span>Products prepared on your delivery day</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="booking-form-wrap">
-          <div class="booking-form-card">
-            <h3>📋 Book Now</h3>
-            <form id="bookingForm">
-              <div class="form-group"><label>Your Name *</label><input type="text" id="bookName" required placeholder="Your full name" /></div>
-              <div class="form-group"><label>Phone *</label><input type="tel" id="bookPhone" required placeholder="0305-2619414" /></div>
-              <div class="form-group"><label>Product / Animal</label>
-                <select id="bookProduct">
-                  <option value="">— Select —</option>
-                  <option>Desi Mutton</option><option>Beef</option><option>Beef Qeema</option>
-                  <option>Desi Chicken (Whole)</option><option>Desi Eggs (1 Dozen)</option>
-                  <option>Pure Desi Ghee (1 kg)</option><option>Livestock / Animal</option>
+
+        <div class="booking-card reveal reveal-delay-2">
+          <!-- Progress Stepper -->
+          <div class="stepper" id="bookingStepper">
+            <div class="stepper-progress" id="stepperProgress" style="width: 0%;"></div>
+            <div class="step active" data-step="1">
+              <div class="step-num">1</div>
+              <div class="step-label">Product</div>
+            </div>
+            <div class="step" data-step="2">
+              <div class="step-num">2</div>
+              <div class="step-label">Details</div>
+            </div>
+            <div class="step" data-step="3">
+              <div class="step-num">3</div>
+              <div class="step-label">Confirm</div>
+            </div>
+          </div>
+
+          <form id="bookingForm">
+            <!-- Step 1: Select Product -->
+            <div class="step-content active" id="step1">
+              <div class="form-group">
+                <label>Product / Animal *<span class="urdu-sub">پروڈکٹ منتخب کریں</span></label>
+                <select id="bookProduct" required>
+                  <option value="">— Select a product —</option>
+                  <option value="Desi Mutton — per kg — PKR 2,800">Desi Mutton — per kg — PKR 2,800</option>
+                  <option value="Fresh Beef — per kg — PKR 850">Fresh Beef — per kg — PKR 850</option>
+                  <option value="Beef Qeema — per kg — PKR 900">Beef Qeema — per kg — PKR 900</option>
+                  <option value="Mutton Qeema — per kg — PKR 3,000">Mutton Qeema — per kg — PKR 3,000</option>
+                  <option value="Desi Chicken — whole/per kg — PKR 950">Desi Chicken — whole/per kg — PKR 950</option>
+                  <option value="Chicken Karahi Cut — per kg — PKR 1,000">Chicken Karahi Cut — per kg — PKR 1,000</option>
+                  <option value="Desi Eggs — 1 dozen — PKR 350">Desi Eggs — 1 dozen — PKR 350</option>
+                  <option value="Desi Eggs Tray — 30 eggs — PKR 800">Desi Eggs Tray — 30 eggs — PKR 800</option>
+                  <option value="Pure Desi Ghee — 1 kg — PKR 2,800">Pure Desi Ghee — 1 kg — PKR 2,800</option>
+                  <option value="Pure Desi Ghee — 500g — PKR 1,500">Pure Desi Ghee — 500g — PKR 1,500</option>
+                  <option value="Livestock / Animal — Contact for price">Livestock / Animal — Contact for price</option>
                 </select>
               </div>
-              <div class="form-group"><label>Delivery Date</label><input type="date" id="bookDate" /></div>
-              <div class="form-group"><label>Special Instructions</label><textarea id="bookNotes" placeholder="Any special request..."></textarea></div>
-              <button type="submit" class="form-submit">📅 Confirm Booking</button>
-            </form>
-            <div class="form-success" id="bookingSuccess">✅ Booking confirmed! We'll contact you within 24 hours.</div>
-          </div>
+              <div class="form-group">
+                <label>Delivery Date *<span class="urdu-sub">ڈیلیوری کی تاریخ</span></label>
+                <input type="date" id="bookDate" required />
+              </div>
+              <div class="step-actions">
+                <button type="button" class="btn btn-primary" id="stepNext1">Continue</button>
+              </div>
+            </div>
+
+            <!-- Step 2: Your Details -->
+            <div class="step-content" id="step2">
+              <div class="form-group">
+                <label>Your Name *<span class="urdu-sub">آپ کا نام</span></label>
+                <input type="text" id="bookName" required placeholder="Your full name" />
+              </div>
+              <div class="form-group">
+                <label>Phone Number *<span class="urdu-sub">فون نمبر</span></label>
+                <input type="tel" id="bookPhone" required placeholder="03XX-XXXXXXX" />
+                <small id="phoneError" style="color:#dc3545;font-size:.78rem;display:none;margin-top:4px;">Please enter a valid Pakistan number (03XX-XXXXXXX)</small>
+              </div>
+              <div class="form-group">
+                <label>Delivery Location *<span class="urdu-sub">ڈیلیوری کا مقام</span></label>
+                <select id="bookLocation" required>
+                  <option value="">— Select delivery area —</option>
+                  <option>Khanpur</option>
+                  <option>Rahim Yar Khan</option>
+                  <option>Liaquatpur</option>
+                  <option>Sadiqabad</option>
+                  <option>Chachran Sharif</option>
+                  <option>Kot Samaba</option>
+                  <option>Jamal Din Wali</option>
+                  <option>Trinda Muhammad Panah</option>
+                  <option>Khan Bela</option>
+                  <option>Zahir Pir</option>
+                  <option>Naushahra</option>
+                  <option>Bhong</option>
+                  <option>Ahmed Pur Lamma</option>
+                  <option>Feroza</option>
+                  <option>Therhi</option>
+                  <option>Nawankot</option>
+                  <option>Muhammad Pur</option>
+                  <option>Daharki</option>
+                  <option>Ubaro</option>
+                  <option value="other">📍 Other Area</option>
+                </select>
+              </div>
+              <div class="form-group" id="bookCustomLocationGroup" style="display:none;">
+                <label>Your Area / Address *</label>
+                <input type="text" id="bookCustomLocation" placeholder="Enter your area or full address" />
+              </div>
+              <div class="form-group">
+                <label>Special Instructions</label>
+                <textarea id="bookNotes" placeholder="Any special request..."></textarea>
+              </div>
+              <div class="step-actions">
+                <button type="button" class="btn btn-outline" id="stepBack2" style="color:var(--text-primary);border-color:var(--border);">Back</button>
+                <button type="button" class="btn btn-primary" id="stepNext2">Continue</button>
+              </div>
+            </div>
+
+            <!-- Step 3: Confirm -->
+            <div class="step-content" id="step3">
+              <div class="checkout-summary" id="bookingSummary">
+                <!-- Filled by JS -->
+              </div>
+              <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:20px;line-height:1.6;">By confirming, you agree to pay a 20% advance to secure your booking. We'll contact you within 24 hours.</p>
+              <div class="step-actions">
+                <button type="button" class="btn btn-outline" id="stepBack3" style="color:var(--text-primary);border-color:var(--border);">Back</button>
+                <button type="submit" class="btn btn-primary">Confirm & Chat on WhatsApp<span class="urdu-sub" style="color:rgba(255,255,255,.6);">واٹس ایپ پر بکنگ بھیجیں</span></button>
+              </div>
+            </div>
+          </form>
+
+          <div class="form-success" id="bookingSuccess">✅ Booking confirmed! We'll contact you within 24 hours.</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- VACCINATION HISTORY -->
+  <!-- ══════════════════════════════════════════════
+       VACCINATION RECORDS
+       ══════════════════════════════════════════════ -->
   <section id="vaccination" class="section">
     <div class="container">
-      <div class="text-center">
-        <span class="section-label">Health Records</span>
+      <div class="text-center reveal">
+        <div class="section-label">Health Records</div>
         <h2 class="section-title">Vaccination History</h2>
-        <p class="section-sub">Track your animal's complete vaccination record. Enter the animal tag/ID to view history.</p>
+        <p class="section-desc">Full transparency. Track your animal's vaccination record by entering the tag ID below.</p>
       </div>
-      <div class="vacc-search-wrap">
+      <div class="vacc-search-wrap reveal">
         <div class="vacc-search">
-          <input type="text" id="vaccSearchInput" placeholder="Enter Animal Tag ID (e.g., MOF-001)" />
-          <button class="btn btn-primary" id="vaccSearchBtn">🔍 Search</button>
+          <input type="text" id="vaccSearchInput" placeholder="Enter Tag ID (e.g., MOF-001)" />
+          <button class="btn btn-primary" id="vaccSearchBtn">Search</button>
         </div>
       </div>
       <div class="vacc-results" id="vaccResults"></div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section" style="background:var(--white);">
+  <!-- ══════════════════════════════════════════════
+       ABOUT
+       ══════════════════════════════════════════════ -->
+  <section id="about" class="section">
     <div class="container">
       <div class="about-grid">
-        <div class="about-image-wrap">
-          <img src="images/about.png" alt="Mian Organic Farm" class="about-img-main" />
-          <div class="about-img-badge"><span>15+</span><span>Years of Trust</span></div>
+        <div class="about-image-wrap reveal">
+          <img src="images/about.png" alt="Mian Organic Farm — Heritage of Excellence" class="about-img-main" />
+          <div class="about-img-badge">
+            <span>15+</span>
+            <span>Years of Trust</span>
+          </div>
         </div>
-        <div class="about-content">
-          <span class="section-label">Our Story</span>
-          <h2 class="section-title">A Heritage of<br/>Organic Excellence</h2>
-          <p class="section-sub" style="margin-bottom:20px;">Mian Organic Farm has been serving the Khanpur community for over 15 years with the purest desi products. Every animal is raised on natural feed, every product is 100% organic.</p>
+        <div class="about-content reveal reveal-delay-2">
+          <div class="section-label">Our Story</div>
+          <h2 class="section-title">A Heritage of<br>Organic Excellence</h2>
+          <p class="section-desc" style="margin-bottom:24px;">Mian Organic Farm has been serving the Khanpur community for over 15 years with the purest desi products. Every animal is raised on natural feed — no hormones, no additives.</p>
           <div class="about-features">
-            <div class="about-feature"><div class="about-feature-icon">🌾</div><div class="about-feature-text"><strong>Natural Feed Only</strong><span>No hormones or additives</span></div></div>
-            <div class="about-feature"><div class="about-feature-icon">💉</div><div class="about-feature-text"><strong>Vaccinated & Certified</strong><span>Full health records</span></div></div>
-            <div class="about-feature"><div class="about-feature-icon">🚚</div><div class="about-feature-text"><strong>Home Delivery</strong><span>Khanpur & nearby areas</span></div></div>
-            <div class="about-feature"><div class="about-feature-icon">🤝</div><div class="about-feature-text"><strong>Family-Owned</strong><span>Personal service & trust</span></div></div>
+            <div class="about-feature">
+              <div class="about-feature-icon">🌾</div>
+              <div class="about-feature-text">
+                <strong>Natural Feed Only</strong>
+                <span>No hormones or additives</span>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">💉</div>
+              <div class="about-feature-text">
+                <strong>Vaccinated & Certified</strong>
+                <span>Full health records</span>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">🚚</div>
+              <div class="about-feature-text">
+                <strong>Home Delivery</strong>
+                <span>Khanpur & nearby areas</span>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">🤝</div>
+              <div class="about-feature-text">
+                <strong>Family-Owned</strong>
+                <span>Personal service & trust</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- ══════════════════════════════════════════════
+       CONTACT
+       ══════════════════════════════════════════════ -->
   <section id="contact" class="section">
     <div class="container">
       <div class="contact-grid">
-        <div class="contact-info">
-          <span class="section-label">Get In Touch</span>
-          <h2 class="section-title">Contact Us</h2>
-          <p class="section-sub">Questions about our products, delivery, or livestock? We're here to help.</p>
+        <div class="contact-info reveal">
+          <div class="section-label">Get In Touch</div>
+          <h2 class="section-title">We'd Love to<br>Hear From You</h2>
+          <p class="section-desc">Questions about our products, delivery, or livestock? We're here to help.</p>
           <div class="contact-info-items">
-            <div class="contact-info-item"><div class="contact-info-icon">📍</div><div class="contact-info-text"><strong>Farm Location</strong><span>Mian Organic Farm, Khanpur, Punjab</span></div></div>
-            <div class="contact-info-item"><div class="contact-info-icon">📞</div><div class="contact-info-text"><strong>Call Us</strong><span>0305-2619414</span></div></div>
-            <div class="contact-info-item"><div class="contact-info-icon">⏰</div><div class="contact-info-text"><strong>Hours</strong><span>Daily: 7:00 AM – 8:00 PM</span></div></div>
-          </div>
-          <a href="https://wa.me/923052619414?text=Hello%21%20I%20want%20to%20order%20from%20Mian%20Organic%20Farm." class="whatsapp-cta" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
-        </div>
-        <div class="contact-form-wrap">
-          <div class="contact-form">
-            <h3>Send an Inquiry</h3>
-            <form id="contactForm" novalidate>
-              <div class="form-row">
-                <div class="form-group"><label for="contactName">Your Name *</label><input type="text" id="contactName" required placeholder="Muhammad Ali" /></div>
-                <div class="form-group"><label for="contactPhone">Phone *</label><input type="tel" id="contactPhone" required placeholder="0305-2619414" /></div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📍</div>
+              <div class="contact-info-text">
+                <strong>Farm Location</strong>
+                <span>Mian Organic Farm, Khanpur, Punjab</span>
               </div>
-              <div class="form-group"><label for="contactMessage">Message</label><textarea id="contactMessage" placeholder="How can we help?"></textarea></div>
-              <button type="submit" class="form-submit">📨 Send Inquiry</button>
-            </form>
-            <div class="form-success" id="formSuccess">✅ Thank you! We'll contact you within 24 hours.</div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📞</div>
+              <div class="contact-info-text">
+                <strong>Call Us</strong>
+                <span>0305-2619414</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">⏰</div>
+              <div class="contact-info-text">
+                <strong>Working Hours</strong>
+                <span>Daily: 7:00 AM – 8:00 PM</span>
+              </div>
+            </div>
           </div>
+          <a href="https://wa.me/923052619414?text=Hello%21%20I%20want%20to%20order%20from%20Mian%20Organic%20Farm." class="whatsapp-cta" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+        <div class="contact-form-card reveal reveal-delay-2">
+          <h3>Send an Inquiry</h3>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group"><label for="contactName">Your Name *</label><input type="text" id="contactName" required placeholder="Muhammad Ali" /></div>
+              <div class="form-group"><label for="contactPhone">Phone *</label><input type="tel" id="contactPhone" required placeholder="0305-2619414" /></div>
+            </div>
+            <div class="form-group"><label for="contactMessage">Message</label><textarea id="contactMessage" placeholder="How can we help?"></textarea></div>
+            <button type="submit" class="form-submit">Send Inquiry</button>
+          </form>
+          <div class="form-success" id="formSuccess">✅ Thank you! We'll contact you within 24 hours.</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════════════ -->
   <footer id="footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="footer-logo"><div class="footer-logo-icon">🌿</div><div class="footer-logo-name">Mian Organic Farm</div></div>
-          <p class="footer-desc">Premium desi products & livestock raised with care for over 15 years. Serving Khanpur & nearby areas.</p>
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <div class="footer-logo-icon">🌿</div>
+          <div class="footer-logo-name">Mian Organic Farm</div>
         </div>
-        <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="#shop">Shop</a></li><li><a href="#booking">Booking</a></li><li><a href="#vaccination">Vaccination</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></div>
-        <div class="footer-col"><h4>Products</h4><ul><li><a href="#shop">Desi Mutton</a></li><li><a href="#shop">Fresh Beef</a></li><li><a href="#shop">Desi Chicken</a></li><li><a href="#shop">Desi Eggs</a></li><li><a href="#shop">Pure Ghee</a></li></ul></div>
-        <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:+923052619414">📞 0305-2619414</a></li><li><a href="https://wa.me/923052619414" target="_blank">💬 WhatsApp</a></li><li><a href="#contact">📍 Khanpur, Punjab</a></li></ul></div>
+        <p class="footer-desc">Premium desi products & livestock, raised with care for over 15 years. Serving Khanpur & surrounding areas.</p>
+        <div class="footer-links">
+          <a href="#shop">Shop</a>
+          <a href="#booking">Booking</a>
+          <a href="#vaccination">Records</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="https://wa.me/923052619414" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">© 2026 Mian Organic Farm. All Rights Reserved.</div>
       </div>
-      <div class="footer-bottom"><span>© 2026 Mian Organic Farm. All Rights Reserved.</span></div>
     </div>
   </footer>
 
-  <!-- CART DRAWER -->
+  <!-- ══════════════════════════════════════════════
+       CART DRAWER
+       ══════════════════════════════════════════════ -->
   <div class="cart-overlay" id="cartOverlay"></div>
   <div class="cart-drawer" id="cartDrawer">
     <div class="cart-drawer-header">
-      <h3>🛒 Your Cart</h3>
-      <button class="cart-close" id="cartClose">✕</button>
+      <h3>Your Cart</h3>
+      <button class="cart-close" id="cartClose" aria-label="Close cart">✕</button>
     </div>
     <div class="cart-drawer-body" id="cartDrawerBody">
       <div class="cart-empty" id="cartEmpty"><span>🛒</span><p>Your cart is empty</p></div>
@@ -274,7 +452,7 @@
       <div class="cart-total"><span>Total:</span><span id="cartTotal">PKR 0</span></div>
       <div class="cart-payment-toggle">
         <label class="toggle-label"><input type="radio" name="payType" value="full" checked /> Full Payment</label>
-        <label class="toggle-label"><input type="radio" name="payType" value="instalment" /> Instalment Plan</label>
+        <label class="toggle-label"><input type="radio" name="payType" value="instalment" /> Instalment</label>
       </div>
       <div class="instalment-info" id="instalmentInfo" style="display:none;">
         <select id="instalmentPlan">
@@ -283,20 +461,26 @@
         </select>
         <div class="instalment-breakdown" id="instalmentBreakdown"></div>
       </div>
-      <button class="btn btn-primary cart-checkout-btn" id="checkoutBtn">📦 Proceed to Checkout</button>
+      <button class="btn btn-primary cart-checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
     </div>
   </div>
 
-  <!-- CHECKOUT MODAL -->
+  <!-- ══════════════════════════════════════════════
+       CHECKOUT MODAL
+       ══════════════════════════════════════════════ -->
   <div class="modal-overlay" id="checkoutModal">
     <div class="modal-card">
       <button class="modal-close" id="checkoutClose">✕</button>
-      <h3>📦 Checkout</h3>
+      <h3>Checkout<span class="urdu-sub" style="display:inline;margin-left:8px;">آرڈر مکمل کریں</span></h3>
       <form id="checkoutForm">
-        <div class="form-group"><label>Full Name *</label><input type="text" id="coName" required /></div>
-        <div class="form-group"><label>Phone *</label><input type="tel" id="coPhone" required /></div>
-        <div class="form-group"><label>Delivery Area *</label>
-          <select id="coArea">
+        <div class="form-group"><label>Full Name *<span class="urdu-sub">آپ کا نام</span></label><input type="text" id="coName" required placeholder="Your full name" /></div>
+        <div class="form-group">
+          <label>Phone *<span class="urdu-sub">فون نمبر</span></label>
+          <input type="tel" id="coPhone" required placeholder="03XX-XXXXXXX" />
+          <small id="coPhoneError" style="color:#dc3545;font-size:.78rem;display:none;margin-top:4px;">Please enter a valid Pakistan number (03XX-XXXXXXX)</small>
+        </div>
+        <div class="form-group"><label>Delivery Area *<span class="urdu-sub">ڈیلیوری کا مقام</span></label>
+          <select id="coArea" required>
             <option value="">— Select Area —</option>
             <option>Khanpur</option><option>Rahim Yar Khan</option><option>Liaquatpur</option>
             <option>Sadiqabad</option><option>Chachran Sharif</option><option>Kot Samaba</option>
@@ -313,13 +497,47 @@
         </div>
         <div class="form-group"><label>Notes</label><textarea id="coNotes" placeholder="Any special instructions..."></textarea></div>
         <div class="checkout-summary" id="checkoutSummary"></div>
-        <button type="submit" class="form-submit">✅ Place Order via WhatsApp</button>
+        <button type="submit" class="form-submit">Place Order via WhatsApp<span class="urdu-sub" style="color:rgba(255,255,255,.6);">واٹس ایپ پر آرڈر بھیجیں</span></button>
       </form>
     </div>
   </div>
 
-  <!-- WHATSAPP FLOAT -->
-  <a href="https://wa.me/923052619414" class="whatsapp-float-btn" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+  <!-- ══════════════════════════════════════════════
+       WHATSAPP FLOAT
+       ══════════════════════════════════════════════ -->
+  <a href="https://wa.me/923052619414" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+  <!-- ══════════════════════════════════════════════
+       BOOKING SUCCESS MODAL
+       ══════════════════════════════════════════════ -->
+  <div class="booking-success-overlay" id="bookingSuccessOverlay">
+    <div class="booking-success-card">
+      <div class="success-check">
+        <svg viewBox="0 0 24 24"><polyline points="6 12 10 16 18 8"/></svg>
+      </div>
+      <h3>Booking Confirmed!</h3>
+      <p>Your advance booking has been received. We'll reach out within 24 hours to finalize details.</p>
+      <div class="success-summary" id="successSummaryContent"></div>
+      <button class="success-wa-btn" id="successWhatsAppBtn">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Chat on WhatsApp to Finalize
+      </button>
+      <button class="success-dismiss" id="successDismiss">Close</button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       STICKY MOBILE ADD-TO-CART BAR
+       ══════════════════════════════════════════════ -->
+  <div class="sticky-cart-bar" id="stickyCartBar">
+    <div class="sticky-info">
+      <span id="stickyCartText">🛒 Cart</span><br>
+      <strong id="stickyCartTotal">PKR 0</strong>
+    </div>
+    <button class="sticky-add-btn" onclick="openCart()">View Cart<span class="urdu-sub" style="color:rgba(255,255,255,.6);">کارٹ دیکھیں</span></button>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
